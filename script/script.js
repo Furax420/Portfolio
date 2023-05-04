@@ -32,7 +32,7 @@ window.addEventListener("scroll", function () {
 //TYPED//
 var typed = new Typed(".typed", {
   strings: [
-    "Après un <b>BAC STI2D</b> obtenu en 2014, mon parcours professionnel m'a conduit dans divers domaine profesionnel comme expliqué plus bas. Après des premiers pas en autodidacte dans le développement web, j'ai décidé de suivre une formation au sein d'OpenClassRooms qui m'a permis d'acquérir des bases solides dans différents langages. Je cherche maintenant à approfondir ces connaissances dans un cadre professionnel par le biais d'une licence pro. en alternance.",
+    "Après un BAC STI2D obtenu en 2014, mon parcours professionnel m'a conduit dans divers domaine profesionnel comme expliqué plus bas. Après des premiers pas en autodidacte dans le développement web, j'ai décidé de suivre une formation au sein d'OpenClassRooms qui m'a permis d'acquérir des bases solides dans différents langages. Je cherche maintenant à approfondir ces connaissances dans un cadre professionnel par le biais d'une licence pro. en alternance.",
   ],
   typeSpeed: 15,
   backSpeed: 0,

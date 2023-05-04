@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       langages: "HTML, CSS",
       notions:
         "Respect du design d'une maquette / Utilisation de balises sémantiques / Reponsive / Validation W3C",
-      imageURL: "/media/projet1.png",
+      imageURL: "/media/projet1.webp",
       siteURL: "https://furax420.github.io/P1_Bookie/",
       codeURL: "https://github.com/Furax420/premierProjet/tree/main",
       description:
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
       langages: "Javascript, CSS",
       notions:
         "Génération dynamique d'éléments / Log In avec stockage de token / Création de modal / Utilisation d'API",
-      imageURL: "/media/projet2.png",
-      siteURL: "https://www.tm96cv2022.fr/projet2/FrontEnd/index.html",
+      imageURL: "/media/projet2.webp",
+      siteURL: "https://preeminent-tapioca-52a725.netlify.app/",
       codeURL: "https://github.com/Furax420/P3_JS",
       description:
         "Ce projet avait pour but de créer la partie front-end interractive d'un site d'architecte. La première étape à été de généré des boutons de filtres en fonction des catégories de photos postées par le client. Dans un second temps, j'ai mis en place un formulaire de Log In fonctionnel Ensuite, j'ai mis en place un modale qui permet de viualiser et supprimer les photos déjà postées sur le site et une autre modale qui permet de poster une nouvelle photo en renseignant un format d'image particulier, une taille maximal, un nom et une catégorie. Tout au long de se projet je me suis familiarisé avec l'utilisation de JavaScript et également les différents type de requêtes aux API.",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       langages: "HTML, CSS, JavaScript",
       notions:
         "Gestion Agile / Sprint / Outils de Veille Technologique / Kanban via Notion",
-      imageURL: "/media/projet3.png",
+      imageURL: "/media/projet3.webp",
       siteURL:
         "https://bedecked-digit-3f0.notion.site/6f4c39b29a2043bd8c608e6bb0d8c378?v=5c9cb6b3c23f4b479addc8e0be1b11d0",
       codeURL: "https://exemple-code-projet1.com",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Essentiellement HTML (CSS pour quelques fixes et JavaScript pour la partie débug)",
       notions:
         "SEO / Accessibilité / Débug / Balises Méta / Données Structurées / Chargement Différé",
-      imageURL: "/media/projet4.png",
+      imageURL: "/media/projet4.webp",
       siteURL: "https://furax420.github.io/Projet5/",
       codeURL: "https://github.com/Furax420/Projet5",
       description:
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       titre: "Projet 5 - React",
       langages: "HTML, CSS, JavaScript",
       notions: "2 semaines",
-      imageURL: "/media/projet5.png",
+      imageURL: "/media/projet5.webp",
       siteURL: "https://majestic-cranachan-7327f6.netlify.app",
       codeURL: "https://github.com/Furax420/projet6",
     },
@@ -59,17 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
       titre: "Projet 6 - Back-End",
       langages: "HTML, CSS, JavaScript",
       notions: "2 semaines",
-      imageURL: "/media/projet1.png",
+      imageURL: "/media/projet1.webp",
       siteURL: "https://exemple-site-projet1.com",
       codeURL: "https://exemple-code-projet1.com",
     },
     {
-      titre: "Projet 7 - Ce portfolio",
+      titre: "Projet 7 - Ce Portfolio",
       langages: "HTML, CSS, JavaScript",
       notions: "2 semaines",
-      imageURL: "/media/projet1.png",
+      imageURL: "/media/projet7.webp",
       siteURL: "https://exemple-site-projet1.com",
-      codeURL: "https://exemple-code-projet1.com",
+      codeURL: "https://github.com/Furax420/Portfolio",
     },
     // ajouter d'autres projets ici...
   ];
@@ -172,16 +172,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnSite = document.createElement("a");
     btnSite.classList.add("bouton-site");
     btnSite.href = projet.siteURL;
-    btnSite.textContent =
-      projet.titre === "Projet 3 - Gestion Agile"
-        ? "Voir le Kanban"
-        : "Voir le site";
+    btnSite.textContent = "Voir le site";
 
     const btnCode = document.createElement("a");
     btnCode.classList.add("bouton-code");
     btnCode.href = projet.codeURL;
-    btnCode.textContent = "Voir le code";
-
+    if (projet.titre === "Projet 3 - Gestion Agile") {
+      btnCode.textContent = "Voir le Kanban";
+    } else {
+      btnCode.textContent = "Voir le code";
+    }
     btnSite.addEventListener("click", (event) => {
       event.preventDefault();
       window.open(projet.siteURL, "_blank", "noopener,noreferrer");
@@ -192,10 +192,14 @@ document.addEventListener("DOMContentLoaded", function () {
       window.open(projet.codeURL, "_blank", "noopener,noreferrer");
     });
 
-    btnConteneur.appendChild(btnSite);
-    if (projet.titre !== "Projet 3 - Gestion Agile") {
-      btnConteneur.appendChild(btnCode);
+    if (
+      projet.titre !== "Projet 3 - Gestion Agile" &&
+      projet.titre !== "Projet 7 - Ce Portfolio"
+    ) {
+      btnConteneur.appendChild(btnSite);
     }
+
+    btnConteneur.appendChild(btnCode);
 
     infoConteneur.appendChild(btnConteneur);
 
