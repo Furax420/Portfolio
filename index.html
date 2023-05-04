@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/formation.css" />
+    <link rel="stylesheet" href="./styles/experience.css" />
+    <link rel="stylesheet" href="./styles/hobbies.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <script src="https://kit.fontawesome.com/796cd232e6.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar">
+        <div class="collapse navbar-collapse"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Tristan Mayer</a>
+          </li>
+          <li class="nav-item">
+            <a href="#formation" class="nav-link">Parcours de Formation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#exp" class="nav-link">Expériences Profesionnelles</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hobbies" class="nav-link">Mes Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Tristan Mayer</h1>
+        <div id="line"></div>
+        <h2>Portfolio Développeur Web</h2>
+        <section class="presentation">
+          <div class="presentation-container">
+            <div class="presentation-infos">
+              <ul>
+                <li>26 ans</li>
+                <li><i class="fa-solid fa-house"></i></li>
+                <li>Dijon 21000</li>
+                <li><i class="fa-solid fa-at"></i></li>
+                <li class="email">tristan.mayer96@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i></li>
+                <li>06.72.30.50.46</li>
+              </ul>
+            </div>
+            <div class="presentation-text">
+              <span class="typed"></span>
+            </div>
+            <div class="presentation-tools">
+              <h2 class="langage-tools">Langages Et Outils Maîtrisés</h2>
+              <div class="tools">
+              <ul>
+                <li><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i></li>
+                <li>HTML & CSS</li>
+                <li><i class="fa-brands fa-square-js"></i></li>
+                <li>Javascript</li>
+                <li><i class="fa-brands fa-react"></i></li>
+                <li>React</li>
+              </ul>
+              <ul>
+                <li><i class="fa-brands fa-square-github"></i></li>
+                <li>Github</li>
+                <li><i class="fa-brands fa-square-git"></i></li>
+                <li>Gitbash</li>
+              </ul>
+            </div>
+
+            </div>
+          </div>
+        </section>
+    </header>
+  <main>
+    <section class="formation-dev" id="formation">
+<div class="formation-titre">
+  <h2>Parcours de formation Développeur Web <br>chez OpenClassRooms<img class="ocr-logo" src="ocr-logo.png" alt="Logo OpenClassRooms">
+  </h2>
+</div>
+<div class="projects-containeur"></div>
+    </section>
+<section class="experiences" id="exp">
+  <h2>Mes Expériences Profesionnelles</h2>
+    <div id="experiences">
+      <div class="experience btp">
+          <img src="/media/btp.png" alt="Grue - BTP">
+      </div>
+      <div class="experience pizza">
+          <img src="/media/pizza.png" alt="Pizza - Foodtruck">
+      </div>
+      <div class="experience education">
+          <img src="/media/livres.png" alt="Livre - Éducation Nationale">
+      </div>
+      <div id="experience-info" class="hidden">
+        <h2 id="experience-title"></h2>
+        <p id="experience-duration"></p>
+        <ul id="experience-description"></ul>
+    </div>
+  </div>
+</section>
+    <section id="hobbies">
+      <div class="App">
+        <h2 class="mes-hobbies">Mes hobbies</h2>
+        <div id="carousel"></div>
+      </div>
+      <div class="informations">
+        <h2 class="info-h2">Autres informations </h2>
+        <div class="info-container">
+          <ul>
+            <div class="vehicule">
+            <li><img src="/media/motorcycle-icon-11562943268vracxoczhd.png" alt="moto"> <img src="/media/623239-icone-de-voiture-auto-logo-template-vector-gratuit-vectoriel.png" alt="voiture" class="voiture-logo"></li>
+            <li>Permis A & B</li>
+          </div>
+          <div class="langue">
+            <li><img src="/media/uk-british-flag-waving-animated-gif-5.gif" alt="uk flag" class="english"></li>
+            <li>Anglais Niveau Intermédiaire</li>
+          </div>
+          <div class="processeur">
+            <li><img src="/media/processeur.png" alt="processeur" class="processeur-logo"></li>
+            <li>Connaissances Hardware</li>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3 id="contact">Contactez Moi</h3>
+      <div class="footer-icons">
+          <div>
+              <a href="https://linkedin.com/in/mayer-tristan-952507236" class="network" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+              </a>
+          </div>
+      <div>
+          <a href="https://github.com/Furax420" class="network" target="_blank">
+              <i class="fa fa-github"></i>
+          </a>
+      </div>
+  </div>
+  
+  <div class="form-container">
+      <form id="reused_form">
+        <div>
+          <input id="name" type="text" name="name" placeholder="Nom" required class="validate">
+        </div>
+        <div>
+          <input id="email" type="email" name="email" placeholder="E-mail" required class="validate">
+        </div>
+        <div>
+          <textarea id="message" name="message" placeholder="Ici votre message..." class="validate" ></textarea>
+        </div>
+        <div>
+          <button class="form-button" type="submit">Envoyer</button>
+        </div>
+      </form>
+  
+      <div id="error_message" style="width:100%; height:100%; display:none; ">
+        <h4>Une erreur s'est produite, veuillez rééssayer </h4> 
+        <p class="message">Vous pouvez me contacter directement sur mon adresse mail : <u><span id="tocopy">tristan.mayer96@gmail.com</span></u></p>
+        <input id="copier" type="button" value="Copier" class="js-copy" data-target="#tocopy">
+      </input>
+      </div>
+      <div id="success_message" style="width:100%; height:100%; display:none; ">
+        <h4>Message envoyé !</h4>
+      </div>
+    </div>
+  
+      <div class="arrow">
+          <a href="#">
+              <i class="fa fa-sort-up"></i>
+          </a>
+      </div>
+      <p>Tristan Mayer © 2022</p>
+  </footer>
+  </main>
+    
+    <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/typed.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/form/form.js"></script>
+    <script src="./script/script.js" type="text/javascript"></script>
+    <script src="./script/formation.js" type="text/javascript"></script>
+    <script src="./script/experience.js" type="text/javascript"></script>
+    <script src="./script/caroussel.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+html {
+  scroll-behavior: smooth;
+  margin: auto;
+  overflow-x: hidden;
+}
+body {
+  color: #283655 !important;
+  background-color: #f7faff !important;
+  font-family: "Alata", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+.navbar {
+  background-color: #fafafad3;
+  opacity: 0.9;
+  height: 42px;
+  transition: 0.7s;
+  margin: auto;
+}
+.navbar-nav {
+  width: 100% !important;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+header {
+  text-align: center;
+  height: auto;
+  background: url(../media/header2.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  background-attachment: local;
+  background-position: center;
+  height: 75%;
+  color: black;
+}
+
+h1 {
+  padding: 90px 0 0px 0;
+  font-size: 4.3em;
+  text-transform: uppercase;
+}
+#line {
+  height: 2px;
+  background-color: #b3aca7;
+  width: 25%;
+  margin: 10px auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Conteneur principal */
+.presentation-container {
+  display: flex;
+  /* grid-template-columns: 1fr auto 1fr; */
+  justify-content: space-between;
+  gap: 2%;
+  padding: 2rem;
+  max-width: 100%;
+  color: wheat;
+}
+
+/* Styles communs pour les trois blocs */
+.presentation-infos,
+.presentation-text,
+.presentation-tools {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-height: 380px;
+}
+
+/* Bloc presentation-infos */
+.presentation-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid black;
+  border-radius: 15px;
+  min-width: 350px;
+}
+
+.presentation-infos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.presentation-infos li {
+  padding: 0.5rem 0;
+  word-wrap: break-word;
+}
+
+/* Bloc presentation-text */
+.presentation-text {
+  backdrop-filter: blur(5px);
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 50%;
+  max-width: 600px;
+  padding: 35px !important;
+  font-size: clamp(0.9em, 1.2em, 1.2em);
+  text-align: justify;
+}
+
+/* Bloc presentation-tools */
+.presentation-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: 350px;
+}
+.tools {
+  display: flex;
+  flex-direction: row;
+}
+
+.presentation-tools li {
+  padding: 4px 0;
+  text-align: center;
+  font-size: 1rem;
+  width: 120px;
+}
+.presentation-tools ul {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.presentation-tools i {
+  font-size: 2.5rem;
+}
+
+.fa-html5:hover {
+  color: #d84924;
+}
+
+.fa-css3:hover {
+  color: #2091eb;
+}
+
+.fa-square-js:hover {
+  color: #e4d04b;
+}
+
+.fa-react:hover {
+  color: #00cdf2;
+}
+
+.fa-square-github:hover {
+  color: #f7faff;
+}
+
+.fa-square-git:hover {
+  color: aquamarine;
+}
+
+/* .presentation-tools:hover .fa-html5 {
+  color: #d84924;
+}
+
+.presentation-tools:hover .fa-css3 {
+  color: #2091eb;
+}
+
+.presentation-tools:hover .fa-square-js {
+  color: #e4d04b;
+}
+
+.presentation-tools:hover .fa-react {
+  color: #00cdf2;
+}
+
+.presentation-tools:hover .fa-square-github {
+  color: #f7faff;
+}
+
+.presentation-tools:hover .fa-square-git {
+  color: aquamarine;
+} */
+
+.langage-tools {
+  text-decoration: underline;
+}
+/* Media query pour les écrans plus petits */
+@media (max-width: 1300px) {
+  .presentation-text {
+    padding: 10px !important;
+  }
+
+  .presentation-infos {
+    min-width: 224px;
+  }
+  .presentation-tools {
+    min-width: 300px;
+  }
+
+  .navbar {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1052px) {
+  .presentation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "infos tools"
+      "text text";
+    gap: 20px;
+  }
+
+  .presentation-infos {
+    grid-area: infos;
+  }
+
+  .presentation-text {
+    grid-area: text;
+    grid-column: 1 / span 2;
+    width: auto;
+    margin: auto;
+  }
+
+  .presentation-tools {
+    grid-area: tools;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .navbar {
+    display: none !important;
+  }
+  .fixep-top {
+    position: unset !important;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header h1 {
+    font-size: 3.5em;
+  }
+
+  .presentation-tools {
+    min-width: 224px;
+  }
+
+  .presentation-tools ul {
+    width: 112px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .presentation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentation-infos {
+    min-width: 281px;
+    width: 50%;
+  }
+
+  .presentation-text {
+    display: none;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,200 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1600px;
+  margin: auto;
+  height: 415px;
+  border-radius: 25px;
+}
+
+#hobbies {
+  margin: auto;
+  justify-content: space-evenly;
+  width: 95vw;
+}
+.mes-hobbies,
+.info-h2 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 38px;
+  text-decoration: underline;
+  color: #000000;
+}
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-image-container {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 415px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.carousel-image-container:hover .carousel-image {
+  filter: blur(2px);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+}
+
+.carousel-text-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.carousel-text-items {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.carousel-text-items li {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-image-container:hover .carousel-text {
+  opacity: 1;
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 10px;
+  outline: none !important;
+}
+
+.next-btn {
+  position: absolute;
+  outline: none !important;
+  right: 10px;
+}
+
+@media (max-width: 680px) {
+  .carousel {
+    height: 255px;
+  }
+
+  .carousel-image-container {
+    height: 255px;
+  }
+
+  .carousel-image {
+    height: 255px;
+  }
+
+  .carousel-indicator {
+    display: none;
+  }
+}
+
+#hobbies {
+  display: flex;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 415px;
+}
+
+.info-container ul {
+  padding-left: 0 !important;
+}
+.vehicule,
+.langue {
+  margin-bottom: 50px;
+}
+.info-container {
+  text-align: center;
+}
+.info-container img {
+  width: 40px;
+}
+
+.english {
+  width: 80px !important;
+  padding-bottom: 5px;
+}
+.voiture-logo {
+  width: 60px !important;
+}
+
+.processeur-logo {
+  padding-bottom: 5px;
+
+  width: 80px !important;
+}
+
+@media (max-width: 1052px) {
+  #hobbies {
+    flex-direction: column;
+  }
+  .info-h2 {
+    padding: 50px 0 0 0;
+  }
+  .info-container {
+    height: 400px;
+  }
+
+  .carousel {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-text-title {
+    font-size: 1em;
+  }
+
+  .carousel-text-items li {
+    font-size: 0.8em;
+  }
+}
