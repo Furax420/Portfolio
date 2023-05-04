@@ -109,17 +109,17 @@ class Carousel {
 
 const images = [
   {
-    src: "informatique.jpg",
+    src: "./media/informatique.jpg",
     title: "Informatique & Technologie",
     items: ["Développement", "Jeux-Vidéos", "Innovation informatique"],
   },
   {
-    src: "science.jpg",
+    src: "./media/science.jpg",
     title: "Science",
     items: ["Astronomie", "Biologie", "Physique"],
   },
   {
-    src: "nature.jpg",
+    src: "./media/nature.jpg",
     title: "Nature",
     items: ["Randonnées", "Bushcraft", "Montagne"],
   },
