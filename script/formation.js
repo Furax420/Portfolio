@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       titre: "Projet 5 - React",
       langages: "HTML, CSS, JavaScript",
       notions: "2 semaines",
-      imageURL: "/media/projet5.webp",
+      imageURL: "/media/projet5.png",
       siteURL: "https://majestic-cranachan-7327f6.netlify.app",
       codeURL: "https://github.com/Furax420/projet6",
     },
