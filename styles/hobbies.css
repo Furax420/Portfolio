@@ -52,7 +52,7 @@
   transition: filter 0.3s;
 }
 
-.carousel-image-container:hover .carousel-image {
+.carousel:hover .carousel-image {
   filter: blur(2px);
 }
 
@@ -88,7 +88,7 @@
   margin-bottom: 0.5rem;
 }
 
-.carousel-image-container:hover .carousel-text {
+.carousel:hover .carousel-text {
   opacity: 1;
 }
 

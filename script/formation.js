@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       titre: "Projet 1 - HTML & CSS",
       langages: "HTML, CSS",
       notions:
-        "Respect du design d'une maquette / Utilisation de balises sémantiques / Reponsive / Validation W3C",
+        "Respect du design d'une maquette / Utilisation de balises sémantiques / Responsive / Validation W3C",
       imageURL: "/media/projet1.webp",
       siteURL: "https://furax420.github.io/P1_Bookie/",
       codeURL: "https://github.com/Furax420/premierProjet/tree/main",
