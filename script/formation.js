@@ -49,27 +49,33 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       titre: "Projet 5 - React",
-      langages: "HTML, CSS, JavaScript",
-      notions: "2 semaines",
+      langages: "React, CSS",
+      notions: "Composants React / React-Router / Props / Hook / Responsive",
       imageURL: "/media/projet5.png",
       siteURL: "https://majestic-cranachan-7327f6.netlify.app",
       codeURL: "https://github.com/Furax420/projet6",
+      description:
+        "Ce projet avait pour but d'apprendre l'utilisation de React et ses composants et également React-Router. J'ai donc créé un site complet de locations immobilières comprenant une page d'acceuil, une page A propos, une page détaillé pour chaque logement et enfin une page 404 pour tout URL inconnu. Ce projet m'a appris l'utilisation des composants React, des props et des différents hook et également la bonne structure des dossiers d'un projet React. Le site final est entièrement responsive.",
     },
     {
       titre: "Projet 6 - Back-End",
-      langages: "HTML, CSS, JavaScript",
-      notions: "2 semaines",
+      langages: "",
+      notions: "",
       imageURL: "/media/projet1.webp",
       siteURL: "https://exemple-site-projet1.com",
       codeURL: "https://exemple-code-projet1.com",
+      description: "Projet en cours",
     },
     {
       titre: "Projet 7 - Ce Portfolio",
       langages: "HTML, CSS, JavaScript",
-      notions: "2 semaines",
+      notions:
+        "HTML sémantique / CSS / Modal / Formulaire de contact PHP / Caroussel",
       imageURL: "/media/projet7.webp",
       siteURL: "https://exemple-site-projet1.com",
       codeURL: "https://github.com/Furax420/Portfolio",
+      description:
+        "Le dernier projet de ma formation est le portfolio que vous consultez actuellement. J'ai utilisé une grande partie de ce que j'ai appris durant ma formation afin de créer un Portfolio complet et qui me représente. Il représente l'aboutissement de mon travail en tant que jeune développeur web.",
     },
     // ajouter d'autres projets ici...
   ];
