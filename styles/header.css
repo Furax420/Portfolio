@@ -222,6 +222,9 @@ h1 {
 
   .presentation-infos {
     grid-area: infos;
+    max-width: 350px;
+    min-width: 350px;
+    justify-self: center;
   }
 
   .presentation-text {
@@ -233,6 +236,8 @@ h1 {
 
   .presentation-tools {
     grid-area: tools;
+    justify-self: center;
+
   }
 }
 
@@ -243,7 +248,31 @@ h1 {
   .fixep-top {
     position: unset !important;
   }
-}
+  header h1 {
+  padding-top: 40px ;
+
+  }.presentation-infos {
+    grid-area: infos;
+    max-width: 250px;
+    min-width: 250px;
+    justify-self: center;
+  }
+
+  .presentation-tools {
+    min-width: 250px;
+    max-width: 250px;
+  }
+
+  .presentation-tools ul {
+    width: 112px;
+    padding: 0;
+  }
+
+  .presentation-container { 
+    padding: 15px;
+  }
+  }
+
 
 @media screen and (max-width: 630px) {
   header h1 {
@@ -269,7 +298,12 @@ h1 {
   }
 
   .presentation-infos {
-    min-width: 281px;
+    /* min-width: 281px; */
+    width: 50%;
+  }
+
+  .presentation-tools {
+    min-width: 250px;
     width: 50%;
   }
 
