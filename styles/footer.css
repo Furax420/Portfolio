@@ -61,7 +61,7 @@ input {
   padding: 0px 15px;
   background: none;
   outline: none;
-  /* color: #000000; */
+  color: antiquewhite;
   border: solid 1px #ffffff;
   border-bottom: none;
 }
@@ -124,7 +124,7 @@ textarea {
   margin: 150px auto;
   padding: 50px;
   box-shadow: 0 0 5px green;
-  color: green;
+  color: antiquewhite;
 }
 
 .arrow {
