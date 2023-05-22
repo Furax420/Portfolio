@@ -151,9 +151,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(modal);
     modal.style.display = "block";
   }
-
-  projets.forEach(function (projet, index) {
-    const carte = creerCarte(projet, index);
-    projectsContaineur.appendChild(carte);
-  });
 });
