@@ -32,7 +32,7 @@
 //TYPED//
 var typed = new Typed(".typed", {
   strings: [
-    "Après un BAC STI2D obtenu en 2014, mon parcours professionnel m'a conduit dans divers domaines profesionnels comme expliqué plus bas. Après des premiers pas en autodidacte dans le développement web, j'ai décidé de suivre une formation au sein d'OpenClassRooms qui m'a permis d'acquérir des bases solides dans différents langages. Je cherche maintenant à approfondir ces connaissances dans un cadre professionnel par le biais d'une licence pro en alternance.",
+    "Passionné par le secteur de l'informatique, j'ai entrepris une reconversion professionnelle, dans un premier temps par la validation d’une formation diplômante en développement web. J’ai ensuite souhaité poursuivre ce parcours par une année en Licence Pro. Métiers de l’Informatique: Applications Web – Systèmes Intra / Internet pour l’Entreprise. Actuellement en phase de finalisation de cette année, je suis à la recherche d'une opportunité de carrière qui me permettrait de mettre en pratique mes compétences techniques et contribuer efficacement à des projets innovants.",
   ],
   typeSpeed: 15,
   backSpeed: 0,
