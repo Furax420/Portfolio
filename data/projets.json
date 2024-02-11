@@ -9,8 +9,8 @@
         "description": "Ce projet consistait à fabriquer la partie Front-End d'un site de réservation d'hôtels en ligne. Étant le premier projet de la formation, les langages utilisés ont été HTML et CSS. À partir d'une maquette fournie par le client, j'ai recréé le site en partant de zéro, en respectant le design de la maquette. Le site devait également être responsive pour téléphone et tablette."
     },
     {
-        "titre": "Projet 2 - Javascript",
-        "langages": "Javascript, CSS",
+        "titre": "Projet 2 - JavaScript",
+        "langages": "JavaScript, CSS",
         "notions": "Génération dynamique d'éléments / Log In avec stockage de token / Création de modal / Utilisation d'API",
         "imageURL": "/media/projet2.webp",
         "siteURL": "https://preeminent-tapioca-52a725.netlify.app/",
@@ -23,7 +23,7 @@
         "notions": "Gestion Agile / Sprint / Outils de Veille Technologique / Kanban via Notion",
         "imageURL": "/media/projet3.webp",
         "siteURL": "https://bedecked-digit-3f0.notion.site/6f4c39b29a2043bd8c608e6bb0d8c378?v=5c9cb6b3c23f4b479addc8e0be1b11d0",
-        "codeURL": "https://exemple-code-projet1.com",
+        "codeURL": "",
         "description": "Durant ce projet, j'ai été chargé de préparer au mieux le développement d'un nouveau site de création de menu pour un client. J'ai d'abord configuré un outil de veille technologique pour me permettre de trouver de l'inspiration et me tenir informé sur le monde du développement et de la technologie. Ensuite, grâce aux Users Stories déterminées en amont, j'ai pu travailler sur une solution logique et cohérente pour les équipes de développeurs. J'ai également établi un tableau Kanban sur Notion qui regroupe les différentes tâches et leur état d'avancement."
     },
     {
@@ -46,19 +46,19 @@
     },
     {
         "titre": "Projet 6 - Back-End",
-        "langages": "",
-        "notions": "",
-        "imageURL": "/media/projet1.webp",
-        "siteURL": "https://exemple-site-projet1.com",
-        "codeURL": "https://exemple-code-projet1.com",
-        "description": "Projet en cours"
+        "langages": "Node.js / JavaScript / Express / MongoDB",
+        "notions": "Création de serveur Express / Gestion de base de données MongoDB / Implémentation de l'authentification sécurisée / Développement d'une API RESTful",
+        "imageURL": "/media/p6backend.png",
+        "siteURL": "",
+        "codeURL": "https://github.com/Furax420/P7backend",
+        "description": "Le projet consiste en le développement du back-end pour \"Mon Vieux Grimoire\", un site de référencement et notation de livres pour une chaîne de librairies à Lille. Les enjeux comprennent la mise en place d'une API robuste et optimisée, en particulier pour la gestion et l'optimisation des images dans un contexte de développement écoresponsable. Le projet aborde aussi la gestion de fichiers utilisateur avec Multer et l'optimisation des images, la création de modèles de données, et le calcul dynamique de la note moyenne pour les livres notés."
     },
     {
         "titre": "Projet 7 - Ce Portfolio",
         "langages": "HTML, CSS, JavaScript",
         "notions": "HTML sémantique / CSS / Modal / Formulaire de contact PHP / Caroussel",
         "imageURL": "/media/projet7.webp",
-        "siteURL": "https://exemple-site-projet1.com",
+        "siteURL": "",
         "codeURL": "https://github.com/Furax420/Portfolio",
         "description": "Le dernier projet de ma formation est le portfolio que vous consultez actuellement. J'ai utilisé une grande partie de ce que j'ai appris durant ma formation afin de créer un portfolio complet et qui me représente. Il représente l'aboutissement de mon travail en tant que jeune développeur web."
     }

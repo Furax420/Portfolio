@@ -129,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (
       projet.titre !== "Projet 3 - Gestion Agile" &&
-      projet.titre !== "Projet 7 - Ce Portfolio"
+      projet.titre !== "Projet 7 - Ce Portfolio" &&
+      projet.titre !== "Projet 6 - Back-End"
     ) {
       btnConteneur.appendChild(btnSite);
     }
